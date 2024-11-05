@@ -1,0 +1,4 @@
+com\App.class
+controle\LoginControle.class
+util\Dao.class
+modelo\Vaca.class

@@ -36,5 +36,8 @@ public class MenuControle {
         App.setRoot("vacaIncluir");
     }
      
-    
+    @FXML
+    private void usuarioIncluir() throws IOException{
+        App.setRoot("usuarioIncluir");
+    }
 }

@@ -43,7 +43,4 @@ public class ProducaoListarVacas {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    
-    
-    
 }

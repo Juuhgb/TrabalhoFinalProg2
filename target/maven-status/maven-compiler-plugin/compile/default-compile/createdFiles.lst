@@ -1,6 +1,7 @@
 com\VacaIncluirControle.class
+com\ProducaoListarVacas.class
 com\App.class
-modelo\ProducaoListarVacas.class
+com\ProducaoControle.class
 modelo\Producao.class
 util\Dao.class
 com\UsuarioIncluirControle.class

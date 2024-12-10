@@ -50,12 +50,12 @@
         </Menu>
         <Menu mnemonicParsing="false" text="Usuários">
           <items>
-            <MenuItem mnemonicParsing="false" text="Novo" />
+            <MenuItem mnemonicParsing="false" onAction="#usuarioIncluir" text="Novo" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Produção">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#vacaIncluir" text="Incluir" />
+            <MenuItem mnemonicParsing="false" onAction="#producaoIncluir" text="Incluir" />
                   <MenuItem mnemonicParsing="false" onAction="#producaoListarPorVaca" text="Listar por período" />
                   <MenuItem mnemonicParsing="false" onAction="#producaoListarPorVaca" text="Listar por vaca " />
           </items>

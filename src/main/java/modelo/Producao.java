@@ -1,5 +1,6 @@
 package modelo;
 
+import java.time.LocalDate;
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
 public class Producao {
@@ -12,7 +13,7 @@ public class Producao {
     @BsonProperty(value="producaoMensalFazenda")
     private String producaoMensalFazenda; 
     
-    public Producao(){}
+    public Producao(Vaca vaca, LocalDate data, double quantidade){}
 
     public Producao(String producaoDiariaVaca, String producaoDiariaFazenda, String producaoMensalFazenda){
         this.producaoDiariaVaca= producaoDiariaVaca;

@@ -1,4 +1,5 @@
 com\VacaIncluirControle.class
+com\ExibirUsuarioControle.class
 com\ProducaoListarVacas.class
 com\App.class
 com\ProducaoControle.class

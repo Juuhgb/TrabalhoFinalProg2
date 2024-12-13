@@ -44,9 +44,5 @@ public class Vaca  {
         this.brinco = brinco;
     }
 
-    @Override
-    public String toString(){
-        return this.brinco;
-    }
         
 }

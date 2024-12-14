@@ -2,7 +2,7 @@
 package util;
 
 import java.util.List;
-import modelo.Vaca;
+import modelo.Usuario;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -14,6 +14,15 @@ public class DaoTest {
     public DaoTest() {
     }
 
+//    @Test
+//    public void testListar(){
+//        Dao<Usuario> dao = new Dao(Usuario.class);
+//        List<Usuario> lista = dao.listarTodos(); 
+//        for (Usuario u : lista){
+//            System.out.println(u.getNome());
+//        }
+//    } 
+    
 //    @Test
 //    public void testInserirVaca() {
 //        Vaca v = new Vaca("B1", "Vaquinha", "Holandesa");

@@ -21,7 +21,7 @@ public class ProducaoControle{
     private final Dao<Producao> producaoDao = new Dao<>(Producao.class);
     
     public void AbrirMenu() throws Exception {
-        App.setRoot("menu");
+        MenuInicial.setRoot("menu");
     }
 
     public void initialize() {

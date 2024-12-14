@@ -43,7 +43,7 @@ public class UsuarioIncluirControle {
 
     @FXML
     public void voltarMenu() throws IOException {
-        App.setRoot("menu");
+        MenuInicial.setRoot("menu");
     }
 
     private void limparCampos() {

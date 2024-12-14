@@ -1,4 +1,11 @@
-com\App.class
-controle\LoginControle.class
+com\VacaIncluirControle.class
+com\ExibirUsuarioControle.class
+com\MenuInicial.class
+com\ProducaoListarVacas.class
+com\ProducaoControle.class
+modelo\Producao.class
 util\Dao.class
+com\UsuarioIncluirControle.class
 modelo\Vaca.class
+com\UsuarioCriar.class
+modelo\Usuario.class

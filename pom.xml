@@ -13,7 +13,7 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>13</version>
+            <version>23.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
@@ -65,7 +65,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <mainClass>com.App</mainClass>
+                    <mainClass>com.MenuInicial</mainClass>
                 </configuration>
                 <executions>
                     <execution>

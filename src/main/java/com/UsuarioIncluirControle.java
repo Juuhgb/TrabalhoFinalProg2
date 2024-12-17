@@ -8,7 +8,7 @@ import modelo.Usuario;
 import util.Dao;
 
 public class UsuarioIncluirControle {
-
+    
     @FXML
     private TextField campoLogin;
     @FXML
@@ -25,31 +25,35 @@ public class UsuarioIncluirControle {
 
     @FXML
     private void gravar() {
-        if (campoLogin.getText().isBlank() || campoSenha.getText().isBlank() || campoNome.getText().isBlank()) {
+        if (campoLogin.getText().isBlank() || campoSenha.getText().isBlank()) {
             mostrarErro("Preencha os campos obrigatórios");
             return;
         }
+
         String login = campoLogin.getText().toUpperCase();
         Usuario temp = dao.buscarPorChave("login", login);
+
         if (temp != null) {
             mostrarErro("Já existe este login");
             return;
         }
+
         Usuario usuario = new Usuario(login, campoNome.getText(), campoSenha.getText());
         dao.inserir(usuario);
+
         limparCampos();
-        mostrarSucesso("Usuário cadastrado com sucesso!");
+        mostrarSucesso("Usuário cadastrado com sucesso");
     }
 
     @FXML
-    public void voltarMenu() throws IOException {
-        MenuInicial.setRoot("menu");
+    private void cancelar() throws IOException {
+        App.setRoot("telaLogin");
     }
-
+    
     private void limparCampos() {
-        campoLogin.clear();
-        campoNome.clear();
-        campoSenha.clear();
+        this.campoLogin.setText("");
+        this.campoNome.setText("");
+        this.campoSenha.setText("");
     }
 
     private void mostrarSucesso(String mensagem) {
@@ -65,5 +69,4 @@ public class UsuarioIncluirControle {
         alert.setContentText(mensagem);
         alert.show();
     }
-
 }

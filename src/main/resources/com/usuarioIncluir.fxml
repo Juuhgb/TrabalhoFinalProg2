@@ -38,7 +38,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.UsuarioIncluirControle">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.UsuarioIncluirControle">
    <children>
       <TextField fx:id="campoLogin" layoutX="275.0" layoutY="120.0" prefHeight="30.0" prefWidth="200.0" />
       <TextField fx:id="campoNome" layoutX="275.0" layoutY="180.0" prefHeight="30.0" prefWidth="200.0" />
@@ -59,6 +59,11 @@
          </font>
       </Label>
       <Button layoutX="245.0" layoutY="345.0" mnemonicParsing="false" onAction="#gravar" prefHeight="40.0" prefWidth="65.0" text="Gravar" />
-      <Button layoutX="435.0" layoutY="345.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Cancelar" />
+      <Button layoutX="435.0" layoutY="345.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="40.0" prefWidth="65.0" text="Voltar" />
+      <Label layoutX="275.0" layoutY="40.0" prefHeight="36.0" prefWidth="207.0" text="Cadastrar usuário">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

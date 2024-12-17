@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VacaIncluirControle">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VacaIncluirControle">
    <children>
       <Label layoutX="115.0" layoutY="120.0" prefHeight="35.0" prefWidth="70.0" text="Brinco">
          <font>
@@ -27,6 +27,11 @@
          </font>
       </Label>
       <Button layoutX="245.0" layoutY="345.0" mnemonicParsing="false" onAction="#gravar" prefHeight="40.0" prefWidth="65.0" text="Gravar" />
-      <Button layoutX="435.0" layoutY="345.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Cancelar" />
+      <Button layoutX="435.0" layoutY="345.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Voltar" />
+      <Label layoutX="275.0" layoutY="40.0" prefHeight="35.0" prefWidth="152.0" text="Cadastrar vaca">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

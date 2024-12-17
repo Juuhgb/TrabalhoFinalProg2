@@ -48,5 +48,8 @@ public class Vaca  {
     public String toString(){
         return this.brinco;
     }
+
+
+
         
 }

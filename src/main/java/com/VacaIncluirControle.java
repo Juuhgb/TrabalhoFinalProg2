@@ -43,7 +43,7 @@ public class VacaIncluirControle {
 
     @FXML
     public void voltarMenu() throws IOException {
-        MenuInicial.setRoot("menu");
+        App.setRoot("menu");
     }
 
     private void limparCampos() {

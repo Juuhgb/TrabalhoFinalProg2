@@ -9,6 +9,8 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.DeleteResult;
 import java.util.ArrayList;
 import java.util.List;
+import modelo.Producao;
+import modelo.Vaca;
 import org.bson.Document;
 import org.bson.codecs.configuration.CodecRegistry;
 import org.bson.codecs.pojo.PojoCodecProvider;
@@ -71,6 +73,19 @@ public class Dao <T> {
             todos.add(elemento);
         } 
         return todos; 
+    }
+
+    public List<Producao> buscarPorCampo(String campo, String valor) {
+        List<Producao> producoes = new ArrayList<>();
+        MongoCursor<Producao> cursor = (MongoCursor<Producao>) collection.find(new Document(campo, valor)).iterator();
+        while (cursor.hasNext()) {
+            producoes.add(cursor.next());
+        }
+        return producoes;
+    }
+
+    public List<Vaca> buscarTodos() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
     

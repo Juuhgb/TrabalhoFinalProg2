@@ -6,32 +6,43 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VacaIncluirControle">
+<AnchorPane prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.VacaAlterarControle">
    <children>
-      <Label layoutX="115.0" layoutY="120.0" prefHeight="35.0" prefWidth="70.0" text="Brinco">
+      <Label layoutX="245.0" layoutY="29.0" text="Alterar Vaca">
          <font>
-            <Font size="25.0" />
+            <Font size="30.0" />
          </font>
       </Label>
-      <TextField fx:id="campoBrinco" layoutX="275.0" layoutY="120.0" prefHeight="30.0" prefWidth="200.0" />
-      <TextField fx:id="campoNome" layoutX="275.0" layoutY="180.0" prefHeight="30.0" prefWidth="200.0" />
-      <TextField fx:id="campoRaca" layoutX="275.0" layoutY="240.0" prefHeight="30.0" prefWidth="200.0" />
-      <Label layoutX="115.0" layoutY="180.0" prefHeight="35.0" prefWidth="70.0" text="Nome">
+      <Label layoutX="51.0" layoutY="93.0" text="Brinco Atual:">
          <font>
-            <Font size="25.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="115.0" layoutY="240.0" prefHeight="35.0" prefWidth="70.0" text="Raça">
+      <TextField fx:id="campoBrincoAtual" layoutX="200.0" layoutY="95.0" prefWidth="300.0" />
+      <Button layoutX="520.0" layoutY="95.0" mnemonicParsing="false" onAction="#buscarVaca" text="Buscar" />
+
+      <Label layoutX="51.0" layoutY="143.0" text="Novo Brinco:">
          <font>
-            <Font size="25.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <Button layoutX="245.0" layoutY="345.0" mnemonicParsing="false" onAction="#gravar" prefHeight="40.0" prefWidth="65.0" text="Gravar" />
-      <Button layoutX="435.0" layoutY="345.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Cancelar" />
-      <Label layoutX="288.0" layoutY="46.0" prefHeight="35.0" prefWidth="186.0" text="Alterar Vaca">
+      <TextField fx:id="campoNovoBrinco" layoutX="200.0" layoutY="145.0" prefWidth="300.0" />
+
+      <Label layoutX="51.0" layoutY="193.0" text="Novo Nome:">
          <font>
-            <Font size="25.0" />
+            <Font size="20.0" />
          </font>
       </Label>
+      <TextField fx:id="campoNovoNome" layoutX="200.0" layoutY="195.0" prefWidth="300.0" />
+
+      <Label layoutX="51.0" layoutY="243.0" text="Nova Raça:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoNovaRaca" layoutX="200.0" layoutY="245.0" prefWidth="300.0" />
+
+      <Button layoutX="200.0" layoutY="303.0" mnemonicParsing="false" onAction="#salvarAlteracoes" prefHeight="40.0" prefWidth="65.0" text="Salvar" />
+      <Button layoutX="435.0" layoutY="303.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="40.0" prefWidth="65.0" text="Voltar" />
    </children>
 </AnchorPane>
